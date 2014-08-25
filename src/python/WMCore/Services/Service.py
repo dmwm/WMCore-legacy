@@ -108,11 +108,11 @@ class Service(dict):
             self["logger"].exception(msg)
             raise WMException(msg)
         
-        self['logger'].debug("""Service initialised (%s):
-\t host: %s, basepath: %s (%s)\n\t cache: %s (duration %s hours, max reuse %s hours)""" %
-                  (self, self["requests"]["host"], self["basepath"],
-                   self["requests"]["accept_type"], self["cachepath"],
-                   self["cacheduration"], self["maxcachereuse"]))
+#        self['logger'].debug("""Service initialised (%s):
+#\t host: %s, basepath: %s (%s)\n\t cache: %s (duration %s hours, max reuse %s hours)""" %
+#                  (self, self["requests"]["host"], self["basepath"],
+#                   self["requests"]["accept_type"], self["cachepath"],
+#                   self["cacheduration"], self["maxcachereuse"]))
     
     def _makeHash(self, inputdata, hash):
         """
